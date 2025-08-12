@@ -4,20 +4,20 @@ export default function About() {
   const achievements = [
     {
       icon: TrendingUp,
-      title: "Improved Test Coverage by 450%",
-      description: "Scaled automation suite from 10% to 55% coverage with 500+ test cases across multiple projects.",
+      title: "Increased Test Coverage by 450%",
+      description: "Expanded automation coverage from 10% to 55% (a 4.5× increase) by developing 500+ automated test cases across multiple projects, enhancing release confidence and reducing manual effort.",
       color: "primary"
     },
     {
       icon: Clock,
       title: "Reduced Testing Time by 35%", 
-      description: "Optimized automation frameworks and CI/CD integration to significantly decrease execution time.",
+      description: "Optimized automation frameworks and integrated CI/CD pipelines to cut execution time by over one-third, enabling faster feedback cycles and quicker releases.",
       color: "emerald-500"
     },
     {
       icon: Users,
-      title: "Team Leadership & Mentoring",
-      description: "Successfully mentored junior QA engineers and led cross-functional teams in Agile environments.",
+      title: "Led & Mentored High-Performance QA Teams",
+      description: "Guided cross-functional Agile teams and mentored junior QA engineers, improving test quality, coding standards, and collaboration across projects.",
       color: "accent"
     }
   ];

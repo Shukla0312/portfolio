@@ -1,10 +1,10 @@
-import { Download, MapPin, Briefcase, User, Check, Bot, Users } from "lucide-react";
+import { Download, MapPin, Briefcase, Check } from "lucide-react";
+import headshot from "@assets/headshot.jpg";
 
 export default function Hero() {
   const handleDownloadResume = () => {
-    // Create a blob with resume content or trigger download
     const link = document.createElement('a');
-    link.href = '/api/resume'; // This would serve the actual resume file
+    link.href = '/api/resume';
     link.download = 'Rahul_Shukla_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -46,26 +46,14 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative">
-            {/* Professional headshot placeholder */}
             <div className="relative w-80 h-80 mx-auto">
-              <div className="w-full h-full bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                <User className="text-white w-32 h-32" />
-              </div>
+              <img
+                src={headshot}
+                alt="Rahul Shukla headshot"
+                className="w-full h-full rounded-full object-cover ring-4 ring-white dark:ring-slate-800"
+              />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-emerald-500 rounded-full flex items-center justify-center">
                 <Check className="text-white w-8 h-8" />
-              </div>
-            </div>
-            {/* Floating skill badges */}
-            <div className="absolute top-4 -left-4 bg-white dark:bg-slate-800 rounded-lg shadow-lg px-4 py-2 animate-pulse">
-              <div className="flex items-center">
-                <Bot className="text-primary mr-2 h-5 w-5" />
-                <span className="font-medium text-slate-900 dark:text-white">Automation Expert</span>
-              </div>
-            </div>
-            <div className="absolute bottom-12 -right-8 bg-white dark:bg-slate-800 rounded-lg shadow-lg px-4 py-2 animate-pulse">
-              <div className="flex items-center">
-                <Users className="text-emerald-500 mr-2 h-5 w-5" />
-                <span className="font-medium text-slate-900 dark:text-white">Team Lead</span>
               </div>
             </div>
           </div>

@@ -33,7 +33,7 @@ export default function Footer() {
     },
     {
       icon: SiGithub,
-      href: "https://github.com/rahulshukla0312",
+      href: "https://github.com/Shukla0312",
       label: "GitHub"
     },
     {
@@ -62,7 +62,7 @@ export default function Footer() {
                     href={link.href}
                     target={link.href.startsWith('http') ? '_blank' : undefined}
                     rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="text-slate-300 dark:text-slate-400 hover:text-white transition-colors duration-200"
+                    className="text-slate-300 dark:text-slate-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-3 hover:shadow-lg hover:shadow-white/20 rounded-lg p-2 hover:bg-white/10 cursor-pointer"
                     aria-label={link.label}
                   >
                     <IconComponent className="w-6 h-6" />
@@ -79,7 +79,7 @@ export default function Footer() {
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-slate-300 dark:text-slate-400 hover:text-white transition-colors duration-200"
+                    className="text-slate-300 dark:text-slate-400 hover:text-white transition-all duration-200 hover:underline underline-offset-4 decoration-white/60 hover:decoration-white cursor-pointer text-left"
                   >
                     {link.label}
                   </button>
@@ -100,7 +100,7 @@ export default function Footer() {
 
         <div className="border-t border-slate-700 dark:border-slate-600 mt-8 pt-8 text-center">
           <p className="text-slate-400 dark:text-slate-500">
-            &copy; 2024 Rahul Shukla. All rights reserved. | Built with passion for quality.
+            &copy; 2025 Rahul Shukla. All rights reserved. | Built with passion for quality.
           </p>
         </div>
       </div>

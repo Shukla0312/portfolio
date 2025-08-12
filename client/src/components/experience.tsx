@@ -32,7 +32,7 @@ export default function Experience() {
       company: "Atidiv India Private Limited",
       location: "Remote",
       period: "01/2022 - 07/2022",
-      color: "accent",
+      color: "primary",
       projects: [
         {
           name: "Voyage SMS",
@@ -49,7 +49,7 @@ export default function Experience() {
       company: "Exzeo India Private Limited",
       location: "Noida, India",
       period: "04/2019 - 12/2021",
-      color: "emerald-600",
+      color: "primary",
       projects: [
         {
           name: "Claim Colony Books & Financials",
@@ -66,7 +66,7 @@ export default function Experience() {
       company: "Infosys Limited", 
       location: "Pune, India",
       period: "07/2015 - 04/2019",
-      color: "orange-600",
+      color: "primary",
       projects: [
         {
           name: "AT&T and Cox Communication",
@@ -99,7 +99,7 @@ export default function Experience() {
             <div key={index} className="relative mb-12">
               <div className="flex items-center mb-4">
                 <div className={`absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-${experience.color} rounded-full border-4 border-white shadow-md flex items-center justify-center`}>
-                  <Briefcase className="text-white w-4 h-4" />
+                  <Briefcase className="text-white w-4 h-4" strokeWidth={2} />
                 </div>
                 <div className={`ml-12 md:ml-0 ${index % 2 === 0 ? 'md:w-1/2 md:pr-8' : 'md:w-1/2 md:ml-auto md:pl-8'}`}>
                   <div className="bg-white dark:bg-slate-800 rounded-lg shadow-md p-6">

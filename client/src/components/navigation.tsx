@@ -56,9 +56,10 @@ export default function Navigation() {
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-200"
+                  className="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-all duration-300 relative overflow-hidden group px-2 py-1 rounded-md hover:bg-primary/5 dark:hover:bg-primary/10"
                 >
                   {link.label}
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
                 </button>
               ))}
             </div>
@@ -85,7 +86,7 @@ export default function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-200"
+                className="block w-full text-left px-3 py-2 text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-all duration-300 hover:bg-primary/5 dark:hover:bg-primary/10 rounded-lg hover:shadow-sm"
               >
                 {link.label}
               </button>
