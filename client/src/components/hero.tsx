@@ -4,7 +4,7 @@ import headshot from "@assets/headshot.jpg";
 export default function Hero() {
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/api/resume';
+    link.href = '/Rahul_Shukla_Resume.pdf';
     link.download = 'Rahul_Shukla_Resume.pdf';
     document.body.appendChild(link);
     link.click();
